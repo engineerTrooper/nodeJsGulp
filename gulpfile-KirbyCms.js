@@ -4,8 +4,8 @@ const sass = require("gulp-sass")(require("sass"));
 const debug = require("gulp-debug");  //debug rule if debug should be shown
 
 
-var originSass = "../assets/sass/**/*.sass";
-var originScss = "../assets/sass/**/*.scss";
+var originSass = "../assets/sass/**/[^_]*.sass";       // ' [^_] ' exclude all files to render that start with an underscore  
+var originScss = "../assets/sass/**/[^_]*.scss";
 var destination = "../assets/css/";
 var destinationUncompressed = "../assets/uncompressed/css";
 
