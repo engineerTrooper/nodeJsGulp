@@ -1,8 +1,8 @@
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+sass.compiler = require('sass');
 
-const debug = require("gulp-debug");  //debug rule if debug should be shown
-
+const debug = require('gulp-debug');  //debug rule if debug should be shown
 
 var originSass = "../assets/sass/**/[^_]*.sass";       // ' [^_] ' exclude all files to render that start with an underscore  
 var originScss = "../assets/sass/**/[^_]*.scss";
@@ -15,7 +15,7 @@ function ScssToCss() {
         gulp
             .src(originScss)
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-            .on("error", sass.logError)
+            .on('error', sass.logError)
             .pipe(gulp.dest(destination))
     );
 };
@@ -25,7 +25,7 @@ function ScssToCssUncompressed() {
         gulp
             .src(originScss)
             .pipe(sass().on('error', sass.logError))
-            .on("error", sass.logError)
+            .on('error', sass.logError)
             .pipe(gulp.dest(destinationUncompressed))
     );
 };
@@ -35,7 +35,7 @@ function SassToCss() {
         gulp
             .src(originSass)
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-            .on("error", sass.logError)
+            .on('error', sass.logError)
             .pipe(gulp.dest(destination))
     );
 };
@@ -45,7 +45,7 @@ function SassToCssUncompressed() {
         gulp
             .src(originSass)
             .pipe(sass().on('error', sass.logError))
-            .on("error", sass.logError)
+            .on('error', sass.logError)
             .pipe(gulp.dest(destinationUncompressed))
     );
 };

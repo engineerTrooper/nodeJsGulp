@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-debug": "^4.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
