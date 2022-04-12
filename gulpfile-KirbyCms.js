@@ -15,6 +15,7 @@ var destinationCookiePlugin = "../site/plugins/kirby3-cookie-banner/assets";
 var destinationCookiePluginUncompressed = "../site/plugins/kirby3-cookie-banner/src/uncompressed";
 
 //diabled because there is an issue with the origin js code (2022-04-12)
+//cookie banner is not working with the new js code of my compression... (no clue why...)
 // function minifyjs() {
 //     return (
 //         gulp
