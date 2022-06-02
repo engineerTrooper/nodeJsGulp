@@ -1,16 +1,19 @@
 {
-  "name": "nodegulp",
+  "name": "nodeJsGulp",
   "version": "1.0.0",
-  "description": "Gulp setup with nodeJS for processing SASS",
+  "description": "Gulp setup with nodeJS for processing SASS and JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dominic Seela (EngineerTrooper)",
+  "license": "MIT License",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-debug": "^4.0.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
   }
