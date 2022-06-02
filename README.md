@@ -16,6 +16,10 @@ gulpfile.js
 ``` 
 You have to write a command like that 
 ```
+gulp --gulpfile <filename>.js watch
+```
+for example:
+```
 gulp --gulpfile gulpfile-KirbyCms.js watch
 ```
 
